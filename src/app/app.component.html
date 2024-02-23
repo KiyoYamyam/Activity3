@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="input-group">
+    <input type="text" [(ngModel)]="username" placeholder="Enter username">
+    <button (click)="resetUsername()" [disabled]="username === ''">Reset</button>
+  </div>
+  <p class="result">Username: {{ username }}</p>
+</div>
